@@ -64,14 +64,23 @@ If you Watch this repository, GitHub will send you an email every time I publish
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/ticketView"
-        app:ticketOrientation="vertical"
-        app:ticketScallopRadius="10dp"
-        app:ticketShowBorder="false"
-        app:ticketScallopPositionPercent="50"
-        app:ticketShowDivider="true"
+        app:ticketBackgroundColor="@color/grey"
+        app:ticketCornerRadius="8dp"
+        app:ticketCornerType="rounded"
+        app:ticketDividerColor="#FFFFFF"
+        app:ticketDividerDesign="color"
+        app:ticketDividerLocation="left"
+        app:ticketDividerPadding="5dp"
         app:ticketDividerType="dash"
-        app:ticketDividerPadding="0dp"
-        app:ticketElevation="14dp"/>
+        app:ticketDividerWidth="1dp"
+        app:ticketElevation="0dp"
+        app:ticketOrientation="horizontal"
+        app:ticketPunchLocation="left|right"
+        app:ticketPunchRadius="12dp"
+        app:ticketScallopRadius="0dp"
+        app:ticketShowBorder="false"
+        app:ticketShowDivider="true"
+        app:view="@id/anchoredViewId"/>
 ```
 
 * Configure using xml attributes or setters in code:
@@ -94,11 +103,6 @@ If you Watch this repository, GitHub will send you an email every time I publish
         <td>app:ticketScallopRadius="10dp"</td>
         <td>20dp</td>
         <td>sets scallop radius</td>
-    </tr>
-    <tr>
-        <td>app:ticketScallopPositionPercent="50"</td>
-        <td>50</td>
-        <td>sets position of scallop and divider</td>
     </tr>
     <tr>
         <td>app:ticketShowBorder="false"</td>
@@ -124,6 +128,11 @@ If you Watch this repository, GitHub will send you an email every time I publish
         <td>app:ticketDividerType="dash"</td>
         <td>normal</td>
         <td>sets type of divider ie `normal` or `dash`</td>
+    </tr>
+    <tr>
+        <td>app:ticketDividerDesign="color or punch"</td>
+        <td>0dp</td>
+        <td>sets the design of the designer either color or punch (punch will show as cut through displaying the background behind the ticketView.</td>
     </tr>
     <tr>
         <td>app:ticketDividerColor="@color/colorAccent"</td>
@@ -164,6 +173,26 @@ If you Watch this repository, GitHub will send you an email every time I publish
         <td>app:ticketElevation="14dp"</td>
         <td>0dp</td>
         <td>sets elevation to ticket view on android jellybean and above</td>
+    </tr>
+    <tr>
+        <td>app:ticketDividerLocation="none|left|right|top|bottom"</td>
+        <td>none</td>
+        <td>sets the location of the divider and scallops with regards to the anchored view app:view</td>
+    </tr>
+    <tr>
+        <td>app:view="@id/anchoredViewId"</td>
+        <td>@null</td>
+        <td>sets the view id in which the divider will be anchored to based on flags of app:ticketDividerLocation and ticketOrientation</td>
+    </tr>
+    <tr>
+        <td>app:ticketPunchLocation="none|left|right|top|bottom"</td>
+        <td>none</td>
+        <td>Set the location where a punch through holes will be drawn on the sides of the ticket</td>
+    </tr>
+    <tr>
+        <td>app:ticketPunchRadius="12dp"</td>
+        <td>0dp</td>
+        <td>sets the radius of the punch through holes.</td>
     </tr>
     </table>
  
