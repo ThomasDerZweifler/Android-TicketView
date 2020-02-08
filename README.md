@@ -57,7 +57,7 @@ If you Watch this repository, GitHub will send you an email every time I publish
  * In XML Layout :
 
 ``` java
-<com.vipulasri.ticketview.TicketView
+    <com.vipulasri.ticketview.TicketView
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginTop="60dp"
