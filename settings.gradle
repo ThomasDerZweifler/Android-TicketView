@@ -1,1 +1,1 @@
-include ':sample', ':ticketview'
+include ':example', ':ticketview'

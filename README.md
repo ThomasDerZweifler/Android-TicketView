@@ -1,26 +1,25 @@
-# TicketView
+# Android-TicketView
 
-An Android Library used to implement TicketView based on [vipulasri/TicketView Library](https://github.com/vipulasri/TicketView) in android with normal, rounded and scallop corners.
+An Android Library used to implement TicketView based on [vipulasri/TicketView Library](https://github.com/vipulasri/TicketView) in android with normal, rounded and scallop corners + some extra exciting features.
 
 ### Specs
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
-[![Download](https://api.bintray.com/packages/vipulasri/maven/TicketView/images/download.svg)](https://bintray.com/vipulasri/maven/TicketView/_latestVersion)
 [![MethodsCount](https://img.shields.io/badge/Methods%20and%20size-125%20|%2012KB-e91e63.svg)](http://www.methodscount.com/?lib=com.vipulasri%3Aticketview%3A1.0.2)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/vipulasri/Timeline-View/blob/master/LICENSE)
 
 ### Badges/Featured In
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Ticket%20View-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6521)
-[![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23171-blue.svg)](https://www.androiddevdigest.com/digest-171/) 
+[![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23171-blue.svg)](https://www.androiddevdigest.com/digest-171/)
 
-![showcase](https://github.com/vipulasri/TicketView/blob/master/art/showcase.png)
+![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/screenshot_1.png)
+![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/screenshot_2.png)
+![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/screenshot_3.png)
+![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/screenshot_4.png)
+![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/screenshot_5.png)
 
 ## Sample Project
 
-For information : checkout [Sample App Code](https://github.com/vipulasri/TicketView/tree/master/sample) in repository.
-
-### Download
-
-[![TicketView on Google Play](https://github.com/vipulasri/TicketView/blob/master/art/google_play.png)](https://play.google.com/store/apps/details?id=com.vipulasri.ticketview.sample)
+For information : checkout [Sample App Code](https://github.com/passid-services/Android-TicketView/tree/master/example) in repository.
 
 ## Quick Setup
 
@@ -30,7 +29,7 @@ For information : checkout [Sample App Code](https://github.com/vipulasri/Ticket
 
 ``` gradle
 dependencies {
-    implementation 'com.vipulasri:ticketview:1.0.7'
+    implementation 'com.passid.android:ticketview:1.0.0'
 }
 ```
 
@@ -38,26 +37,18 @@ dependencies {
 
 ``` maven
 <dependency>
-    <groupId>com.vipulasri</groupId>
+    <groupId>com.passid.android</groupId>
     <artifactId>ticketview</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.0</version>
     <type>pom</type>
 </dependency>
 ```
-
-### What's New
-
-See the project's Releases page for a list of versions with their change logs.
-
-### [View Releases](https://github.com/vipulasri/TicketView/releases)
-
-If you Watch this repository, GitHub will send you an email every time I publish an update.
 
 ### 2. Usage
  * In XML Layout :
 
 ``` java
-<com.vipulasri.ticketview.TicketView
+<com.passid.android.ticketview.TicketView
     android:layout_width="match_parent"
     android:layout_height="160dp"
     android:layout_marginTop="60dp"
@@ -81,7 +72,7 @@ If you Watch this repository, GitHub will send you an email every time I publish
     app:ticketShowBorder="false"
     app:ticketShowDivider="true"
     app:view="@id/anchoredViewId">
-    
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -123,8 +114,8 @@ If you Watch this repository, GitHub will send you an email every time I publish
         </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
-</com.vipulasri.ticketview.TicketView>
+
+</com.passid.android.ticketview.TicketView>
 ```
 
 * Configure using xml attributes or setters in code:
@@ -239,20 +230,6 @@ If you Watch this repository, GitHub will send you an email every time I publish
         <td>sets the radius of the punch through holes.</td>
     </tr>
     </table>
- 
-## Apps that use this library
-
-* [Open. Yoga](https://play.google.com/store/apps/details?id=com.labfoodandfriends.nikitagudkovs.jlogOpen_yoga)
-* [Open. Gym](https://play.google.com/store/apps/details?id=com.labfoodandfriends.nikitagudkovs.jlog_gym)
-
-[Apps using Ticket View, via AppBrain Stats](https://www.appbrain.com/stats/libraries/details/ticketview/ticketview)
-
-If you're using this library in your app and you'd like to list it here,
-Please let me know via [email](mailto:vipulasri.2007@gmail.com), [pull requests](https://github.com/vipulasri/TicketView/pulls) or [issues](https://github.com/vipulasri/TicketView/issues).
-
-## Special Thanks
-
-[**Nick Butcher**](https://github.com/nickbutcher) for helping me out with TicketView Shadow/Elevation.
 
 
 ## License
