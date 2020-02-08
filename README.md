@@ -57,30 +57,74 @@ If you Watch this repository, GitHub will send you an email every time I publish
  * In XML Layout :
 
 ``` java
-    <com.vipulasri.ticketview.TicketView
+<com.vipulasri.ticketview.TicketView
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/ticketView"
+    app:ticketBackgroundColor="@color/grey"
+    app:ticketCornerRadius="8dp"
+    app:ticketCornerType="rounded"
+    app:ticketDividerColor="#FFFFFF"
+    app:ticketDividerDesign="color"
+    app:ticketDividerLocation="left"
+    app:ticketDividerPadding="5dp"
+    app:ticketDividerType="dash"
+    app:ticketDividerWidth="1dp"
+    app:ticketElevation="0dp"
+    app:ticketOrientation="horizontal"
+    app:ticketPunchLocation="left|right"
+    app:ticketPunchRadius="12dp"
+    app:ticketScallopRadius="0dp"
+    app:ticketShowBorder="false"
+    app:ticketShowDivider="true"
+    app:view="@id/anchoredViewId">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/ticketView"
-        app:ticketBackgroundColor="@color/grey"
-        app:ticketCornerRadius="8dp"
-        app:ticketCornerType="rounded"
-        app:ticketDividerColor="#FFFFFF"
-        app:ticketDividerDesign="color"
-        app:ticketDividerLocation="left"
-        app:ticketDividerPadding="5dp"
-        app:ticketDividerType="dash"
-        app:ticketDividerWidth="1dp"
-        app:ticketElevation="0dp"
-        app:ticketOrientation="horizontal"
-        app:ticketPunchLocation="left|right"
-        app:ticketPunchRadius="12dp"
-        app:ticketScallopRadius="0dp"
-        app:ticketShowBorder="false"
-        app:ticketShowDivider="true"
-        app:view="@id/anchoredViewId"/>
+        android:layout_height="64dp"
+        android:background="?selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:text="Group Ticket."
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/anchoredViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingStart="22dp"
+            android:paddingEnd="22dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#f00"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="USD $200"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</com.vipulasri.ticketview.TicketView>
 ```
 
 * Configure using xml attributes or setters in code:
@@ -132,7 +176,7 @@ If you Watch this repository, GitHub will send you an email every time I publish
     <tr>
         <td>app:ticketDividerDesign="punch"</td>
         <td>0dp</td>
-        <td>sets the design of the designer either 'color' or 'punch' (punch will show as cut through displaying the background behind the ticketView.</td>
+        <td>sets the design of the designer either `color` or `punch` (punch will show as cut through displaying the background behind the ticketView.</td>
     </tr>
     <tr>
         <td>app:ticketDividerColor="@color/colorAccent"</td>
