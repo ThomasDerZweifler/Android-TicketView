@@ -1,6 +1,6 @@
 # TicketView
 
-An Android Library used to implement TicketView in android with normal, rounded and scallop corners.
+An Android Library used to implement TicketView based on [vipulasri/TicketView Library](https://github.com/vipulasri/TicketView) in android with normal, rounded and scallop corners.
 
 ### Specs
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
@@ -130,9 +130,9 @@ If you Watch this repository, GitHub will send you an email every time I publish
         <td>sets type of divider ie `normal` or `dash`</td>
     </tr>
     <tr>
-        <td>app:ticketDividerDesign="color or punch"</td>
+        <td>app:ticketDividerDesign="punch"</td>
         <td>0dp</td>
-        <td>sets the design of the designer either color or punch (punch will show as cut through displaying the background behind the ticketView.</td>
+        <td>sets the design of the designer either 'color' or 'punch' (punch will show as cut through displaying the background behind the ticketView.</td>
     </tr>
     <tr>
         <td>app:ticketDividerColor="@color/colorAccent"</td>
