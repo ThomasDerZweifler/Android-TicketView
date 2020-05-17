@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/confirmation_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.passid.android.ticketview.TicketView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="0dp"
+                app:elevation="0dp"
+                app:ticketBackgroundColor="@color/white"
+                app:ticketCornerRadius="8dp"
+                app:ticketCornerType="rounded"
+                app:ticketDividerColor="@color/grey"
+                app:ticketDividerDesign="color"
+                app:ticketDividerLocation="left"
+                app:ticketDividerPadding="5dp"
+                app:ticketDividerType="dash"
+                app:ticketDividerWidth="1dp"
+                app:ticketElevation="0dp"
+                app:ticketOrientation="horizontal"
+                app:ticketScallopRadius="6dp"
+                app:ticketShowBorder="false"
+                app:ticketShowDivider="true"
+                app:view="@id/price_holder">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="?selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="24dp"
+                        android:text="Horizontal TicketView"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/price_holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:paddingStart="22dp"
+                        android:paddingEnd="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle_full_background"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="250 L.E"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.passid.android.ticketview.TicketView>
+
+            <com.passid.android.ticketview.TicketView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="0dp"
+                app:elevation="0dp"
+                app:ticketBackgroundColor="@color/white"
+                app:ticketCornerRadius="8dp"
+                app:ticketCornerType="rounded"
+                app:ticketDividerColor="@color/grey"
+                app:ticketDividerDesign="color"
+                app:ticketDividerLocation="left"
+                app:ticketDividerPadding="5dp"
+                app:ticketDividerType="dash"
+                app:ticketDividerWidth="1dp"
+                app:ticketElevation="0dp"
+                app:ticketOrientation="horizontal"
+                app:ticketPunchLocation="left|right"
+                app:ticketPunchRadius="12dp"
+                app:ticketScallopRadius="0dp"
+                app:ticketShowBorder="false"
+                app:ticketShowDivider="true"
+                app:view="@id/price_holder5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/option5"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="?selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="24dp"
+                        android:text="Horizontal TicketView"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/price_holder5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:background="@color/black_transparent_n"
+                        android:paddingStart="22dp"
+                        android:paddingEnd="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle_full_background"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="250 L.E"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.passid.android.ticketview.TicketView>
+
+            <com.passid.android.ticketview.TicketView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="0dp"
+                app:elevation="0dp"
+                app:ticketBackgroundColor="@color/white"
+                app:ticketCornerRadius="8dp"
+                app:ticketCornerType="rounded"
+                app:ticketDividerColor="@color/grey"
+                app:ticketDividerDesign="color"
+                app:ticketDividerLocation="left|right"
+                app:ticketDividerPadding="0dp"
+                app:ticketDividerType="dash"
+                app:ticketDividerWidth="1dp"
+                app:ticketElevation="0dp"
+                app:ticketOrientation="horizontal"
+                app:ticketPunchLocation="left|right"
+                app:ticketPunchRadius="12dp"
+                app:ticketScallopRadius="0dp"
+                app:ticketShowBorder="false"
+                app:ticketShowDivider="true"
+                app:view="@id/price_holder4">
+
+                <LinearLayout
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="?selectableItemBackground"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent" />
+
+                    <RelativeLayout
+                        android:id="@+id/price_holder4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="1"
+                        android:background="@color/passid_blue"
+                        android:paddingStart="22dp"
+                        android:paddingEnd="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle_full_background"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="250 L.E"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/black_transparent_n" />
+
+                </LinearLayout>
+
+            </com.passid.android.ticketview.TicketView>
+
+            <com.passid.android.ticketview.TicketView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="0dp"
+                app:ticketBackgroundColor="@color/white"
+                app:ticketCornerRadius="8dp"
+                app:ticketCornerType="scallop"
+                app:ticketDividerColor="#FFFFFF"
+                app:ticketDividerDesign="punch"
+                app:ticketDividerLocation="left"
+                app:ticketDividerPadding="5dp"
+                app:ticketDividerType="dash"
+                app:ticketDividerWidth="1dp"
+                app:ticketElevation="0dp"
+                app:ticketOrientation="horizontal"
+                app:ticketPunchLocation="left|right"
+                app:ticketPunchRadius="12dp"
+                app:ticketScallopRadius="0dp"
+                app:ticketShowBorder="false"
+                app:ticketShowDivider="true"
+                app:view="@id/price_holder1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="?selectableItemBackground">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="24dp"
+                        android:text="Scallop Corner Ticket."
+                        android:textColor="@color/dark_grey"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/price_holder1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:paddingStart="22dp"
+                        android:paddingEnd="22dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle_full_background"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:text="200 L.E"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.passid.android.ticketview.TicketView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <com.passid.android.ticketview.TicketView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    app:ticketBackgroundColor="@color/passid_blue"
+                    app:ticketCornerRadius="8dp"
+                    app:ticketCornerType="rounded"
+                    app:ticketDividerColor="@color/white"
+                    app:ticketDividerDesign="color"
+                    app:ticketDividerLocation="top|bottom"
+                    app:ticketDividerPadding="5dp"
+                    app:ticketDividerType="dash"
+                    app:ticketDividerWidth="1dp"
+                    app:ticketElevation="0dp"
+                    app:ticketOrientation="vertical"
+                    app:ticketPunchLocation="none"
+                    app:ticketPunchRadius="12dp"
+                    app:ticketScallopRadius="6dp"
+                    app:ticketShowBorder="false"
+                    app:ticketShowDivider="true"
+                    app:view="@id/price_holder2">
+
+                    <LinearLayout
+                        android:id="@+id/option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:gravity="center_vertical"
+                            android:padding="24dp"
+                            android:text="Vertical Ticket View"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/price_holder2"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_gravity="end"
+                            android:background="@color/shimmer_color"
+                            android:paddingStart="22dp"
+                            android:paddingEnd="22dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_full_background"
+                                android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:text="450 L.E"
+                                android:textColor="@color/grey"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="end"
+                            android:background="@color/black_transparent_n"
+                            android:padding="12dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/text">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/black_transparent_n" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </com.passid.android.ticketview.TicketView>
+
+                <com.passid.android.ticketview.TicketView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    app:ticketBackgroundColor="@color/passid_blue"
+                    app:ticketCornerRadius="8dp"
+                    app:ticketCornerType="rounded"
+                    app:ticketDividerColor="@color/white"
+                    app:ticketDividerDesign="color"
+                    app:ticketDividerLocation="top"
+                    app:ticketDividerPadding="5dp"
+                    app:ticketDividerType="dash"
+                    app:ticketDividerWidth="1dp"
+                    app:ticketElevation="8dp"
+                    app:ticketOrientation="vertical"
+                    app:ticketPunchLocation="none"
+                    app:ticketPunchRadius="12dp"
+                    app:ticketScallopRadius="6dp"
+                    app:ticketShowBorder="false"
+                    app:ticketShowDivider="true"
+                    app:view="@id/price_holder6">
+
+                    <LinearLayout
+                        android:id="@+id/option6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="24dp"
+                            android:text="Vertical Ticket View"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/price_holder6"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@color/shimmer_color"
+                            android:paddingStart="22dp"
+                            android:paddingEnd="22dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/text">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/circle_full_background"
+                                android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:text="450 L.E"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.passid.android.ticketview.TicketView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
