@@ -11,11 +11,17 @@ An Android Library used to implement TicketView based on [vipulasri/TicketView L
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Ticket%20View-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6521)
 [![AndroidDev Digest](https://img.shields.io/badge/AndroidDev%20Digest-%23171-blue.svg)](https://www.androiddevdigest.com/digest-171/)
 
-![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_1.png | width=100)
+<!---![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_1.png | width=100)
 ![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_2.png | width=100)
 ![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_3.png | width=100)
 ![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_4.png | width=100)
-![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_5.png | width=100)
+![showcase](https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_5.png | width=100)--->
+
+<img src="https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_1.png" alt="alt text" width="200">
+<img src="https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_2.png" alt="alt text" width="200">
+<img src="https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_3.png" alt="alt text" width="200">
+<img src="https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_4.png" alt="alt text" width="200">
+<img src="https://github.com/passid-services/Android-TicketView/blob/master/art/Screenshot_5.png" alt="alt text" width="200">
 
 ## Sample Project
 
